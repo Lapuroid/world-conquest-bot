@@ -1,0 +1,19 @@
+[
+    {
+      "name": "Maximillian Robespierre",
+      "description": "French politician who ruled France during the Reign of Terror",
+      "empire": "France",
+      "talents": [
+        "Blaze"
+      ]
+    },
+    {
+      "name": "Napoleon Bonaparte",
+      "description": "French military leader who became Emperor of France",
+      "empire": "France",
+      "talents": [
+        "Blaze"
+      ]
+    }
+  ]
+  
