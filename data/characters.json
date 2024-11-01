@@ -4,19 +4,38 @@
       "alias": ["maximillian", "robespierre", "maximillian robespierre"],
       "description": "French politician who ruled France during the Reign of Terror",
       "empire": "France",
-      "talent": "guillotine"
+      "talent": "guillotine",
+      "stats": {
+        "atk": 100,
+        "def": 80,
+        "spd": 90,
+        "evasion": "1"
+      }
     },
     {
       "name": "Napoleon Bonaparte",
+      "alias": ["napolean", "bonaparte", "napolean bonaparte"],
       "description": "French military leader who became Emperor of France",
       "empire": "France",
-      "talent": "revolution"
+      "talent": "revolution",
+      "stats": {
+        "atk": 100,
+        "def": 100,
+        "spd": 80,
+        "evasion": "1"
+      }
     },
     {
-      "name": "hitler",
+      "name": "Adolf Hitler",
+      "alias": ["adolf", "hitler", "adolf hitler"],
       "description":"hahh",
       "empire": "germany",
-      "talent": "gas chamber"
+      "talent": "gas chamber",
+      "stats": {
+        "atk": 100,
+        "def": 50,
+        "spd": 80,
+        "evasion": "1"
+      }
     }
   ]
-  

@@ -8,7 +8,7 @@ module.exports = {
   usage: '<character name>',
   async execute(message, args) {
     const userId = message.author.id;
-    const characterName = args.join(' ');
+    const characterName = args.join(' ').toLowerCase();
     try {
       const user = await User.findOne({ discordId: userId });
       if (!user) {

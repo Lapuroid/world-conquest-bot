@@ -9,9 +9,8 @@ const characterSchema = new Schema({
   },
   alias: {
     type: Array,
-    required: [true, 'easier search bruh.']
+    required: [true, 'Alias, lowercase required']
   },
-
   description: {
     type: String,
     required: [true, 'Description is required'],
@@ -27,6 +26,10 @@ const characterSchema = new Schema({
     required: [true, 'Talent is required'],
     trim: true,
   },
+  stats: {
+    type: Object,
+    required: [true, 'Stats are required']
+  }
 }, {
   timestamps: true,
 });
