@@ -9,7 +9,7 @@
         "atk": 100,
         "def": 80,
         "spd": 90,
-        "evasion": "1"
+        "evasion": 1
       }
     },
     {
@@ -22,7 +22,7 @@
         "atk": 100,
         "def": 100,
         "spd": 80,
-        "evasion": "1"
+        "evasion": 1
       }
     },
     {
@@ -35,7 +35,7 @@
         "atk": 100,
         "def": 50,
         "spd": 80,
-        "evasion": "1"
+        "evasion": 1
       }
     }
   ]
