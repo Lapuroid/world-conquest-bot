@@ -1,6 +1,7 @@
 [
     {
       "name": "Maximillian Robespierre",
+      "alias": ["maximillian", "robespierre", "maximillian robespierre"],
       "description": "French politician who ruled France during the Reign of Terror",
       "empire": "France",
       "talent": "guillotine"

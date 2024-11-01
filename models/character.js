@@ -7,6 +7,11 @@ const characterSchema = new Schema({
     unique: true,
     trim: true,
   },
+  alias: {
+    type: Array,
+    required: [true, 'easier search bruh.']
+  },
+
   description: {
     type: String,
     required: [true, 'Description is required'],
