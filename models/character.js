@@ -17,10 +17,11 @@ const characterSchema = new Schema({
     required: [true, 'Empire name is required'],
     trim: true,
   },
-  talents: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Talent',
-  }],
+  talent: {
+    type: String,
+    required: [true, 'Talent is required'],
+    trim: true,
+  },
 }, {
   timestamps: true,
 });

@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
 const Character = require('../models/character');
-const Talent = require('../models/talent');
 require('dotenv').config();
 
 const uri = process.env.MONGODB_URI;
@@ -34,7 +33,7 @@ async function loadCharacters() {
 }
 
 // Get talent IDs by name
-async function getTalentIdsByName(talentNames) {
+/*async function getTalentIdsByName(talentNames) {
   try {
     const talents = await Talent.find({ name: { $in: talentNames } }).select('_id name');
     return talents.map(t => t._id);
@@ -42,7 +41,7 @@ async function getTalentIdsByName(talentNames) {
     console.error('Error fetching talents by name:', err);
     throw err;
   }
-}
+}*/
 
 // Add characters to the database
 async function addCharacters() {
@@ -53,10 +52,9 @@ async function addCharacters() {
       const existingCharacter = await Character.findOne({ name: char.name });
 
       if (!existingCharacter) {
-        const talentIds = await getTalentIdsByName(char.talents);
+        //const talentIds = await getTalentIdsByName(char.talents);
         const newCharacter = await Character.create({
-          ...char,
-          talents: talentIds
+          ...char
         });
         console.log(`Character added: ${newCharacter.name}`);
       } else {
